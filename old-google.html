@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title> <!--browser tab text-->
+    <link rel="icon" href="./images/google.png"> <!--browser tab logo-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--font-size 0.9em (where em is 100% of the original font size)-->
+
+    <header>
+        <nav> 
+            <!--used when navigating through links--> 
+            <!--display: flex; implemenets flex containers that adapt to space available. creates flex items which can be aligned in x and y axis-->
+            <!--justify-content: space between = puts child elemenets on x-axis-->
+            <!--copied padding found when inspecting google site-->
+            <!--box-shadow 1-horizonal 2-vertical 3-blur radius 4-size of shadow-->
+
+            <ul class="header-nav"> <!--left side links-->
+                <a href="https://about.google/?fg=1&amp;utm_source=google-GB&amp;utm_medium=referral&amp;utm_campaign=hp-header">About</a>
+                <a href="https://store.google.com/GB?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-GB">Store</a>
+            </ul> 
+            
+            <ul class="header-nav"> <!--right side links-->
+                <a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a>
+                <a href="https://www.google.co.uk/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a>
+                <img class="header-img" src="./images/google-apps.png" alt="google apps">
+            </ul>
+        </nav> 
+    </header>
+
+    <section>
+        <div class="search">
+            <img src="./images/glass.png" alt="glass">
+        <input value="text">
+            <img src="./images/mic.png" alt="mic">
+        </div>
+
+<!--flex-direction:row + align-items:center = stretched (use justify-content:center) / flex-direction:column + align-items:center = centred horizontally-->
+<!--5vh = 5% of view/browser height-->
+
+        <div class="buttons">
+        <input class="boxes" value="Google Search" type="submit">
+        <input class="boxes" value="I'm Feeling Lucky" type="submit">
+            </div>
+    </section> 
+
+    <footer>
+
+        <nav>
+        <ul>    
+            <a href="https://www.google.co.uk/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a  href="https://www.google.co.uk/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+            <a href="https://google.com/search/howsearchworks/?fg=1">How search works</a>
+        </ul>
+        
+        <ul>
+            <a href="https://policies.google.com/privacy?hl=en-GB&fg=1">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a>
+        </ul>
+
+    </nav>
+    
+    </footer>
+
+
+
+
+</body>
+</html>

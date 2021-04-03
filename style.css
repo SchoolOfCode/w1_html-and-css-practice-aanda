@@ -1,3 +1,148 @@
-.float100 {
-    float: left; width: 100px;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;} /*1em = 100% of orginal size*/
+
+a {
+    margin: 5px; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav{
+    display: flex; 
+    justify-content: space-between;} 
+
+.top-footer{
+    display: flex; 
+    justify-content: center;} /*needed to justify-content*/
+
+/*
+row+justify-content = change child elements on x axis
+column+align-items = change child element on y axis
+space-between = repels boxes
+flex visualiser on https://codepen.io/paultrone/pen/xwxNmQ
+*/
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+} /*change elements on y axis*/
+
+ul > a, ul > img {
+    padding: 0 8px; /*top+bottom / right+left*/
+
+}
+
+.header-img:hover {
+    box-shadow: 0 0 10px 0 gainsboro; /*box-shadow 1-horizonal 2-vertical 3-blur radius 4-size of shadow-->*/ 
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.header-img{
+    padding:2.5px 2px 2.5px 4px
+}
+
+section {
+    display: flex;
+    flex-direction: column;/*default is row*/
+    align-items: center; /*column align-items:center / row justify-content:center*/
+    margin-top: 5vh; /*5% of browser height*/
+}
+
+h1 {
+    letter-spacing: -0.05em;
+    font-size: 5.5em;
+    margin-bottom: 40px;
+} /*why is this automatically set to 65.736?*/
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px; /*round off corners*/
+}
+
+.search > input {
+    flex-grow: 1 ;/*how much it will grow relative to rest of flexible items within container / defaults at 0 so setting input 1 means it will be shorter than border of div*/
+    border: none;
+    outline: none; /*appears when clicked*/
+}
+
+.search:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.buttons{
+    padding-top: 29px;
+}
+
+button {
+    background-color:rgb(248, 249, 250);
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    margin: 0 4px;
+    padding: 0 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgb(129, 129, 129);
+}
+
+/*could not get button:active {border-color: rgb(51, 146, 255)}*/
+
+.link {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: absolute; /*relative to viewport. stays in same place even if scrolling*/
+    bottom: 0 ; 
+    width: 100vw /*100% view width*/
+} 
+
+.footer-left{
+    display: flex;
+    justify-self: flex-start; /*box on the left*/
+    padding-left: 20px;
+    align-items: center;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+
+}
+
+.sign-in{
+    background-color:dodgerblue;
+    color: floralwhite;
+    margin-left: 12px;
+}
+
+.sign-in:hover{
+    background-color: rgb(51, 146, 255);
+}
+
+header > nav > ul > a {
+    color: black;
+}
+
+footer > nav > ul > a {
+    color: #70757a;
 }
